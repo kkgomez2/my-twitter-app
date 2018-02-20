@@ -1,5 +1,4 @@
 import Route from '@ember/routing/route';
-import { get, set, getWithDefault } from "@ember/object";
 
 export default Route.extend({
   model() {
