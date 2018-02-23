@@ -1,3 +1,17 @@
 This is where Tweets will display!
 
-{{tweet-display user=tweet.userScreenName}}
+{{input value="Wow!" enter="toggleDisplay"}}
+{{#if displayTweets}}
+  {{#each model as |tweet|}}
+    {{tweet-display
+      userName=tweet.userName
+      userScreenName=tweet.userScreenName
+      userImage=tweet.userImage
+      verified=tweet.verified
+      text=tweet.text
+      date=tweet.date
+      url=tweet.url
+      retweetCount=tweet.retweetCount
+      favoriteCount=tweet.favoriteCount}}
+  {{/each}}
+{{/if}}

@@ -1,5 +1,11 @@
 <div class="tweet-display">
-    @{{user}}
+  <div class="tweet-display__user-info">
+    <b>{{userName}}</b> @{{userScreenName}} {{#if verified}}✔{{/if}}
+  </div>
+  <div class="tweet-display__text">
     {{text}}
+  </div>
+  <div class="tweet-display__meta">
     {{date}}
+  </div>
 </div>
